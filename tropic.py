@@ -9,7 +9,7 @@ async def on_ready():
 
 @client.event
 async def on_member_join(member):
-    role = discord.utils.get(member.server.roles, name='Spieler')
+    role = discord.utils.get(member.server.roles, name='> Spieler <')
     await client.add_roles(member, role)
 
 @client.command(pass_context = True)
