@@ -25,4 +25,4 @@ async def demote(ctx, user: discord.Member, role: discord.Role):
             await(bot.say("{} was demoted from {}.".format(user.name,role)))
             break
       
-bot.run(os.environ["bot_token"
+client.run(os.getenv('TOKEN'))
