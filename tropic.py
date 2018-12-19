@@ -38,4 +38,4 @@ def on_message(message):
         else:
             yield from client.send_message(message.channel, embed=discord.Embed(color=discord.Color.dark_green(), description=("Der Command `%s` existiert nicht." % invoke)))
             
-client.run(str(os.environ.get('TOKEN')))
+client.run(str(os.environ.get("TOKEN")))
